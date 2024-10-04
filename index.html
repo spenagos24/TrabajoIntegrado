@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inicio de sesión</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body> </-- hola esto es un comentario hecho por Luis Fernando-->
+  <div class="contenedor">
+    <div class="login">
+      <h2>Iniciar sesión</h2>
+      <form >
+        <label for="correo">Correo electrónico</label>
+        <div class="correo">
+          <input type="email" id="correo" placeholder="email" required>
+        </div>
+        <label for="contraseña">Contraseña</label>
+        <div class="contraseña">
+          <input type="password" id="pass" placeholder="Contraseña" required>
+          <i class='bx bxs-hide' id="togglePassword"></i>
+          <div>
+            <a href="#">olvide la contraseña</a>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="btn">Entrar</button>
+          <div class="group">
+            <span>No tengo cuenta</span>
+            <a href="#">crear una</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
