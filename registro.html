@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="registro.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Usuario</title>
+</head>
+<body>
+  <div class="teofilo">
+    <form >
+      <h2>REGISTRO DE USUARIO</h2>
+    
+      <div class="input">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" required> <!-- Añadido name -->
+      </div>
+    
+      <div class="input">
+        <label for="documento">Documento</label>
+        <input type="text" name="documento" required> <!-- Añadido name -->
+      </div>
+
+      <div class="input">
+        <label for="email">Email</label>
+        <input type="email" name="email" required> <!-- Cambiado a email y añadido name -->
+      </div>
+
+      <div class="input">
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" required> <!-- Añadido name -->
+      </div>
+
+      <div class="option">
+        <label for="rol">Cargo</label>
+        <select name="rol" id="rol" required> <!-- Añadido name y id -->
+          <option value="">Selecciona una opción</option>
+          <option value="coordinador">Coordinador</option>
+          <option value="tecnico">Técnico</option>
+          <option value="control_calidad">Control Calidad</option>
+        </select>
+      </div>
+    
+      <div class="inicio">
+        <span>Ya tengo cuenta</span>
+        <a href="index.html">Iniciar sesión</a>
+      </div>
+
+      <button type="submit">Registrarme</button> <!-- Cerrado correctamente el botón -->
+    </form>
+  </div>
+</body>
+</html>
