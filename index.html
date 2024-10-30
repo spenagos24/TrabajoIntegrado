@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="login Styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="contenedor">
     <section class="formulario">
         <h2>Iniciar sesión</h2>
-        <form action="http://localhost:8080/login.php" method="POST" id="formularioLogin"> 
+        <form > 
             <div class="input">
                 <label for="correo">Correo electrónico</label>
-                <input class="input" type="email" id="correo" name="correo" required> 
+                <input class="input" type="email" id="correo" name="correo" > 
             </div>
             <div class="password">
                 <label for="contraseña">Contraseña</label>
                 <div class="contenedor-password">
-                    <input type="password" id="contraseña" name="contraseña" required> 
+                    <input type="password" id="contraseña" name="contraseña" > 
                     <i class='bx bxs-hide' id="togglePassword"></i>
                 </div>
             </div>
@@ -29,10 +29,13 @@
                 <a href="#">Olvidé la contraseña</a>
             </div>
             <div class="aol">
-<button type="submit"><a href="inicio index.html">entrar</a></button>
+              <!--
+<button type="submit"><a href="inicio.html">entrar</a></button-->
+<button type="button" onclick="window.location.href='inicio.html'">Entrar</button>
+
                 <div class="registro">
                     <span>¿No tienes una cuenta? </span>
-                    <a href="/registro index.html">Crear cuenta</a> 
+                    <a href="registro.html">Crear cuenta</a> 
                 </div>
             </div>
         </form>

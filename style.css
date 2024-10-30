@@ -1,13 +1,9 @@
-* {
-  padding: 0;
+*{
+  padding:0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: initial;
-}
-html{
- position: fixed no repeat;
- 
+  font-family: Georgia;
+  font-style: inherit;
 }
 
 body {
@@ -29,24 +25,24 @@ body::before {
   color: #FBF1F1;
   z-index: -1; 
 }
-
-.teofilo {
- 
+.contenedor{
   width: 400px;
   border-radius: 15px;
   padding: 40px;
   text-align: center;
   background: rgba(255, 255, 255, 0);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(8px);
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.37); 
   transition: all 0.3s ease; 
 }
-.teofilo:hover{
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
+.contenedor:hover{
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 1)
 }
-
-.register {
+.contenedor a:hover{
+  text-decoration: underline;
+}
+.formulario{
   display: flex;
   flex-direction: column;
 }
@@ -57,13 +53,10 @@ h2{
   letter-spacing: 1px;
   
 }
-.teofilo a:hover{
-  text-decoration: underline;
-}
 button{
-  
   background-color: #1A2d3b;
   color: aqua;
+  width: 100%;
   font-weight: 600;
   border: none;
   padding: 15px 20px;
@@ -71,42 +64,42 @@ button{
   border-radius: 15px;
   font-size: 16px;
   border: 2px solid transparent;
-  transition: all 0.3s ease;
   margin-top: 30px;
 }
-button:hover{
+textarea{
   color: #000000;
   background: rgba(179, 212, 203, 1);
   border-color: #ffffff;
 }
-.inicio{
-  display: flex;
-  justify-content: space-around;
-  
-  
+button a{
+  text-decoration: none;
+  color: aqua;
 }
-.inicio a:hover{
+.registro{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.registro a:hover{
   color: antiquewhite;
   text-decoration: none;
 }
-.inicio a{
-color: green;
-text-decoration: none;
+.registro a{
+  color: red;
+  text-decoration: none;
 }
-.inicio span{
-  margin-right: 60px;
-  padding: 0;
-}
+/* correo*/
+
 .input{
   position: relative;
-  border-bottom: 2px solid rgba(255, 255, 255,0.3);
-  margin: 20px 0;
-  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+ 
+  
 }
-.input label{
+input label{
   position: absolute;
-  margin-bottom: 5px;
-  left: 0;
   transform: translateY(-50%);
   color: #ffffff;
   font-size: 16px;
@@ -115,49 +108,67 @@ text-decoration: none;
 }
 .input input {
   width: 100%;
-  height: 40px;
+  height: 20px;
   background: transparent;
   border: none;
   outline: none;
   font-size: 16px;
+  line-height: 600;
   color: #ffffff;
-  padding-top:15px;
-  padding-left: 10px;
+} 
+
+/* contraseña*/
+.password {
+  position: relative;
+  margin-top: 10px;
+  text-align: left;
+  
+  
 }
-.input input:focus~label,
-.input input:valid~label{
-  font-size:0.9rem;
-  top: 10px;
-  transform: translateY(-150%);
-  color: #ffdde1;
+.password label {
+  display: block; 
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px; 
 }
-
-
-
-.option{
+.contenedor-password {
   display: flex;
-  width: 100%;
-  height: 40px;
-  align-items: center;
-  justify-content: space-between;
-  margin: 25px 0 0 0;
-  margin-bottom: 30px;
-  color: #ffffff;
-  padding-top: 20px;
-  
-  
+  align-items: center; 
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  position: relative;
 }
-.option label{
-  position: absolute;
-  margin-bottom: 50px;
-}
-.option select {
+.password input {
   width: 100%;
+  height: 20px;
   background: transparent;
   border: none;
   outline: none;
   font-size: 16px;
+  line-height: 600;
   color: #ffffff;
-padding-top: 7px;
-  border-bottom: 2px solid rgba(255, 255, 255,0.3);
+  flex-direction: inline;
+  
+}
+i{
+  
+  font-size:20px;
+}
+.teofilo{
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+.teofilo a {
+  color: red;
+  text-decoration: none;
+  
+}
+.teofilo a:hover{
+  text-decoration: none;
+  color: #000000;
+  background: transparent;
+  border-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
