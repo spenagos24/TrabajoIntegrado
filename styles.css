@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('mecanico.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contenedor {
+    display: Flex ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 5px;
+}
+
+.login {
+    background-color: rgba(234, 237, 237, 0.5);
+    border-radius: 12px;
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.correo input,
+.contraseña input {
+    width: 100%;
+    background-color: rgba(234, 237, 237, 0.5);
+    color: black;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.contraseña {
+    position: relative;
+}
+
+.bx {
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-100%);
+
+    cursor: pointer;
+}
+
+button.btn {
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(234, 236, 237, 0.8);
+    color: #18239D;
+    /* Color del texto */
+    border: none;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #18239D;
+}
